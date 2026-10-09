@@ -7,5 +7,6 @@ array = np.array([[1,2,3,4],
 
 # array[start:end:step]
 
-print(array[1:]) #the ending index is exclusive !
+#print(array[1:]) #the ending index is exclusive !
 
+print(array[2:,2:])

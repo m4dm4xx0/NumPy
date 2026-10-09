@@ -1,14 +1,13 @@
 import numpy as np
-array = np.array("A") # 0 dimension array
-array1 = np.array(["A", "B", "C"]) #1 dimension array, a single row
 
-array2 = np.array([["A", "B", "C"],
-                    ["A", "B", "C"]]) #2 dimension array, a single row
+array = np.array("A") #0 dim array
+print(array.ndim)#0
 
-array3 = np.array([[["A"]]])
-print(array.ndim) #number of dimension of the numpy array
+array1 = np.array([1,2])
+print(array1.ndim)#1
 
-print(array2.ndim)
-print(array3.ndim)
+array2 = np.array([[1]])
+print(array2.ndim)#2
 
-#array1 = np.array("A") 
+array3 = np.array([[[1]]])
+print(array3.ndim)#3
